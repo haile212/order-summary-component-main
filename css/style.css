@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    font-family: 'Red Hat Display',sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    background-image: url(../images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: hsl(225, 100%, 94%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main{
+    width: 350px;
+    min-height: 40vh;
+    border-radius:10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:white;
+    color: hsl(224, 23%, 55%);
+    box-shadow: 0px 0px 11px 0px rgba(31,47,86,0.37);
+    -webkit-box-shadow: 0px 0px 11px 0px rgba(31,47,86,0.37);
+    -moz-box-shadow: 0px 0px 11px 0px rgba(31,47,86,0.37);
+}
+.head-pic{
+    height: 180px;
+    width: 350px;
+    border-radius: 10px 10px 0px 0px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 10px;
+    gap: 25px;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.content h1{
+    margin-top: 28px;
+    font-size: 32px;
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+}
+.content p{
+    text-align: center;
+    padding: 0px 10px;
+}
+.song{
+    display: flex;
+    gap: 45px;
+    align-items: center;
+
+}
+.song span{
+    font-weight: 700;
+    color: hsl(223, 47%, 23%);
+}
+.song a{
+    color: hsl(245, 75%, 52%);
+}
+.link{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+.payment-link{
+    padding: 15px 70px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: hsl(245, 75%, 52%);
+    color: hsl(225, 100%, 94%);
+    border-radius: 10px;
+    box-shadow: 1px 10px 14px -5px rgba(56,41,224,0.37);
+    -webkit-box-shadow: 1px 10px 14px -5px rgba(56,41,224,0.37);
+    -moz-box-shadow: 1px 10px 14px -5px rgba(56,41,224,0.37);
+}
+.cancel-link{
+    margin-top: 10px;
+    text-decoration: none;
+    color:  hsl(224, 23%, 55%);
+    font-weight: 700;
+}
+.song a:hover{
+    text-decoration: none;
+}
+.payment-link:hover{
+    background-color: hsl(245, 83%, 68%);
+}
+.cancel-link:hover{
+    color:  hsl(223, 47%, 23%);
+}
+@media (min-width:620px) {
+    body{
+        background-image: url(../images/pattern-background-desktop.svg);
+    }
+}
